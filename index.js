@@ -1,7 +1,7 @@
 let CronJob = require('cron').CronJob;
 const { exec } = require('child_process');
 
-let job = new CronJob('10 * * * * *', function() {
+let job = new CronJob('10 * * * *', function() {
     console.log("hello")
     // yourscript;
     // commit;
