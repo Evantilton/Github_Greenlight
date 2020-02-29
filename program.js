@@ -1,12 +1,12 @@
-f=_=>                          // define `f` as function with a single unused argument `_`
-  require('fs').writeFileSync( // import the standard filesystem module and overwrite file
-    __filename,                // string var containing path of file for current module
-    `f=${f};f()`.replace(      // template string containing source of entire script
-      /(\d[^,]*),(\d[^\)]*)/,  // regexp to match and group the numbers in this script
-      (m,a,b)=>                // replace function with arguments match, group a, group b
-        `${b=+b},${+a+b}`      // template string incrementing fibonacci numbers in place
-    ),                         // end replace()
-    console.log(               // prints to stdout, `undefined` passed to argument
-      (498454011879264,806515533049393)                    // comma separated group returns value of last expression
-    )                          // end console.log()
+f=_=>                          
+  require('fs').writeFileSync( 
+    __filename,                
+    `f=${f};f()`.replace(      
+      /(\d[^,]*),(\d[^\)]*)/,  
+      (m,a,b)=>                
+        `${b++},${a++}`     
+    ),                        
+    console.log(               
+      (0,1)                    
+    )                          
   );f()
