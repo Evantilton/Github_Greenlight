@@ -9,12 +9,12 @@ let number = 0
 
 
 let job = new CronJob('*/60 * * * * *', function () {
-    pretty();
+    itsTimeToCommit();
 }, null, true, 'America/Los_Angeles');
 job.start();
 
 
-function pretty() {
+function itsTimeToCommit() {
     clear()
     console.log(
         chalk.green(
