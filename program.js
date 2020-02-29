@@ -7,6 +7,6 @@ f=_=>                          // define `f` as function with a single unused ar
         `${b=+b},${+a+b}`      // template string incrementing fibonacci numbers in place
     ),                         // end replace()
     console.log(               // prints to stdout, `undefined` passed to argument
-      (1346269,2178309)                    // comma separated group returns value of last expression
+      (14930352,24157817)                    // comma separated group returns value of last expression
     )                          // end console.log()
   );f()
