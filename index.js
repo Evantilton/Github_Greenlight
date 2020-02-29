@@ -22,7 +22,7 @@ function itsTimeToCommit() {
         )
     );
 
-    console.log('hello world');
+    console.log('Hello, I heard you like commits');
     setTimeout(() => {
         let fib = exec('node program.js',
             (error, stdout, stderr) => {
