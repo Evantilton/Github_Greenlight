@@ -15,11 +15,9 @@ This program is meant as a proof of concept and conversation piece.  I do not in
 
 ## Screen Shot
 
-Include one or two screen shots of your project here (optional). Remove if unused.
+![Screenshot](screenshot.png)
 
 ### Prerequisites
-
-Link to software that is required to install the app (e.g. node).
 
 - [Node.js](https://nodejs.org/en/)
 
@@ -27,24 +25,20 @@ Link to software that is required to install the app (e.g. node).
 
 1. Fork and Clone the repo.
 2. Open up your editor of choice and run an `npm install`
-3. Run `node index.js` in your terminal
 
 ## Usage
 
-1. Run the program with 'Node index.js'
+1. Run the program with `node index.js`
 2. The Cronjob will start and depending on what your timer is set for (default 1 minute) it will push a change to github. I wouldn't run it faster than a minute to avoid command conflicts.  (https://www.npmjs.com/package/cron)
 3. Keep it running until you have the desired number of commits in your github.
-
-
 
 ## Built With
 
 1. Javascript
 2. Cronjob
-3. Child_process
-4. Chalk
-5. Clear
-6. Figlet
+3. Chalk
+4. Clear
+5. Figlet
 
 ## Future
 
