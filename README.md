@@ -56,8 +56,8 @@ I have a number of different ideas for how this could be expanded.  I could use 
 _Note, include this only if you have a license file. GitHub will generate one for you if you want!_
 
 ## Acknowledgement
-1.
-2.
+1. This tutorial was really interesting and even though I ended up not using the Github API and a CLI,  it would probably be where I brought the project next. (https://www.sitepoint.com/javascript-command-line-interface-cli-node-js/)
+2. User Patrick Roberts for his code in this thread.  It was invaluable in creating something that rewrites itself. (https://codegolf.stackexchange.com/questions/107642/permanently-self-modifying-code)
 
 ## Support
 If you have suggestions or issues, please email me at [evantilton@gmail.com](www.Etilton.com)
