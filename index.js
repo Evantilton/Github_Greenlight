@@ -24,6 +24,17 @@ const figlet = require('figlet');
           
       console.log('hello world');
       
+      let fib = exec('node program.js',
+            (error, stdout, stderr) => {
+                console.log(stdout);
+                console.log(stderr);
+                if (error !== null) {
+                    console.log();
+                }
+            });
+
+
+
       let gitbranch = exec('git branch',
             (error, stdout, stderr) => {
                 console.log(stdout);
@@ -34,8 +45,6 @@ const figlet = require('figlet');
             });
 
     console.log('git branch')
-
-      console.log('git branch');
       
       let gitAdd = exec('git add .',
             (error, stdout, stderr) => {
