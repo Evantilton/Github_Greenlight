@@ -18,14 +18,14 @@ This program is meant as a proof of concept and conversation piece.  I do not in
 
 ## Installation
 
-1. Fork and Clone the repo.
+1. Fork and Clone the repo
 2. Open up your editor of choice and run an `npm install`
 
 ## Usage
 
 1. Run the program with `node index.js`
 2. The Cronjob will start and depending on what your timer is set for (default 1 minute) it will push a change to github. I wouldn't run it faster than a minute to avoid command conflicts.  (https://www.npmjs.com/package/cron)
-3. Keep it running until you have the desired number of commits in your github.
+3. Keep it running until you have the desired number of commits in your github
 
 ## Built With
 
