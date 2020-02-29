@@ -15,7 +15,7 @@ job.start();
 
 
 function itsTimeToCommit() {
-    clear()
+    clear();
     console.log(
         chalk.green(
             figlet.textSync('Greenlight', { horizontalLayout: 'full' })
