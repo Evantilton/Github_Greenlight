@@ -7,8 +7,6 @@ f=_=>
         `${b++},${a++}`     
     ),                        
     console.log(               
-      (1,0)                    
+      (0,1)                    
     )                          
   );f()
-
-  //see aknowledgements for original source
