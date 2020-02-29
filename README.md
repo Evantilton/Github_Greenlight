@@ -1,8 +1,3 @@
-![MIT LICENSE](https://img.shields.io/github/license/evantilton/the_marketplace.svg?style=flat-square)
-![REPO SIZE](https://img.shields.io/github/repo-size/evantilton/the_marketplace.svg?style=flat-square)
-![TOP_LANGUAGE](https://img.shields.io/github/languages/top/evantilton/the_marketplace.svg?style=flat-square)
-![FORKS](https://img.shields.io/github/forks/evantilton/the_marketplace.svg?style=social)
-
 # Github_Greenlight
 
 ## Description
@@ -42,12 +37,10 @@ This program is meant as a proof of concept and conversation piece.  I do not in
 
 ## Future
 
-I have a number of different ideas for how this could be expanded.  I could use a CLI and the github API to link your github and create a new repository for this.  I could use a CLI to perhapts set the Cronjob when you start it up.  I could try to make this a .app so you can run it on startup.  Lots of potential avenues.
+I have a number of different ideas for how this could be expanded.  I could use a Command Line Interface to perhapts set the Cronjob to a specific interval when you start it up.  I could to use a program like automator.app to make it so this can run on startup.  Lots of potential avenues.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
-
-_Note, include this only if you have a license file. GitHub will generate one for you if you want!_
 
 ## Acknowledgement
 1. This tutorial was really interesting and even though I ended up not using the Github API and a CLI,  it would probably be where I brought the project next. (https://www.sitepoint.com/javascript-command-line-interface-cli-node-js/)
