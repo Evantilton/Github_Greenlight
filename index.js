@@ -73,8 +73,11 @@ function itsTimeToCommit() {
                     console.log();
                 }
             });
+
+            console.log("just ran git push")
+
     }, 40000);
-    console.log("just ran git push")
+
 
 
     setTimeout(() => {
