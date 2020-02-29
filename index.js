@@ -24,9 +24,7 @@ let CronJob = require('cron').CronJob;
           
       console.log('hello world');
       
-      let gitbranch = exec('node program.js',
-              );
-        console.log(gitbranch);
+      let gitbranch = exec('node program.js');
 
       console.log('git branch');
       
@@ -37,6 +35,8 @@ let CronJob = require('cron').CronJob;
       let gitcommit = exec('git commit -m "test"')
 
       console.log("git commit")
+
+      let gitpush = exec('git push -u origin master')
       
       number = number+1
       
