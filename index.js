@@ -8,7 +8,7 @@ const figlet = require('figlet');
 let number = 0
 
 
-let job = new CronJob('*/40 * * * * *', function () {
+let job = new CronJob('*/60 * * * * *', function () {
     pretty();
 }, null, true, 'America/Los_Angeles');
 job.start();
@@ -23,63 +23,77 @@ function pretty() {
     );
 
     console.log('hello world');
+    setTimeout(() => {
+        let fib = exec('node program.js',
+            (error, stdout, stderr) => {
+                console.log(stdout);
+                console.log(stderr);
+                if (error !== null) {
+                    console.log();
+                }
+            });
+    }, 10000);
 
-    let fib = exec('node program.js',
-        (error, stdout, stderr) => {
-            console.log(stdout);
-            console.log(stderr);
-            if (error !== null) {
-                console.log();
-            }
-        });
+    setTimeout(() => {
+        let gitbranch = exec('git branch',
+            (error, stdout, stderr) => {
+                console.log(stdout);
+                console.log(stderr);
+                if (error !== null) {
+                    console.log();
+                }
+            });
+        console.log('git branch')
+
+    }, 20000);
+
+    setTimeout(() => {
+        let gitAdd = exec('git add .',
+            (error, stdout, stderr) => {
+                console.log(stdout);
+                console.log(stderr);
+                if (error !== null) {
+                    console.log();
+                }
+            });
+
+        console.log('git add .')
+
+    }, 30000);
+
+
+    setTimeout(() => {
+        let gitCommit = exec('git commit -m "test"',
+            (error, stdout, stderr) => {
+                console.log(stdout);
+                console.log(stderr);
+                if (error !== null) {
+                    console.log();
+                }
+            });
+
+        console.log("git commit")
+
+    }, 40000);
+
+
+    setTimeout(() => {
+        let gitPush = exec('git push -u origin master',
+            (error, stdout, stderr) => {
+                console.log(stdout);
+                console.log(stderr);
+                if (error !== null) {
+                    console.log();
+                }
+            });
+    }, 50000);
 
 
 
-    let gitbranch = exec('git branch',
-        (error, stdout, stderr) => {
-            console.log(stdout);
-            console.log(stderr);
-            if (error !== null) {
-                console.log();
-            }
-        });
+    setTimeout(() => {
+        number = number + 1
 
-    console.log('git branch')
-
-    let gitAdd = exec('git add .',
-        (error, stdout, stderr) => {
-            console.log(stdout);
-            console.log(stderr);
-            if (error !== null) {
-                console.log();
-            }
-        });
-
-    console.log('git add .')
-
-    let gitCommit = exec('git commit -m "test"',
-        (error, stdout, stderr) => {
-            console.log(stdout);
-            console.log(stderr);
-            if (error !== null) {
-                console.log();
-            }
-        });
-
-    console.log("git commit")
-
-    let gitPush = exec('git push -u origin master',
-        (error, stdout, stderr) => {
-            console.log(stdout);
-            console.log(stderr);
-            if (error !== null) {
-                console.log();
-            }
-        });
-
-    number = number + 1
-
-    console.log("number of times run this session", number)
-
+        console.log("number of times run this session", number)
+    }, 55000);
 };
 
