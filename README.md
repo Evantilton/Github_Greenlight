@@ -4,7 +4,7 @@
 
 _Duration: One Afternoon_
 
-This program makes and commits changes to github on a timer.  It does this by starting a cronjob that executes terminal commands.  These will cause another program to rewrite itself and then commit those changes to github.  This means you could have any number of commits in github that you like or just keep your github eternally greenlit.
+This program makes and commits changes to github on a timer.  It does this by starting a cronjob that executes terminal commands.  These will cause a self-modifying program to run and then commit those changes to github.  This means you could have any number of commits in github that you like or just keep your github eternally greenlit.
 
 This program is meant as a proof of concept and conversation piece.  I do not intend to run this beyond this project.  I just want it to be something interesting that people might notice and dig a little deeper, maybe talk about in interviews. 
 
