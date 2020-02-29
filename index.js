@@ -4,6 +4,10 @@ const chalk = require('chalk');
 const clear = require('clear');
 const figlet = require('figlet');
 
+
+let number = 0
+
+
 let job = new CronJob('*/10 * * * * *', function() {
     pretty();
   }, null, true, 'America/Los_Angeles');
@@ -37,6 +41,18 @@ let gitbranch = exec('git branch',
                 console.log(`exec error: ${error}`);
             }
         });
+console.log('git branch')
+
+
+let gitAdd = exec('git add .',
+        (error, stdout, stderr) => {
+            console.log(stdout);
+            console.log(stderr);
+            if (error !== null) {
+                console.log(`exec error: ${error}`);
+            }
+        });
+
 
 console.log('git add');
 
@@ -62,4 +78,7 @@ console.log('git commit');
 
 console.log('git push');
 
+number = number+1
+
+console.log(number)
     }
