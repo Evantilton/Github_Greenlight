@@ -56,14 +56,14 @@ let gitAdd = exec('git add .',
 
 console.log('git add');
 
-// let gitCommit = exec('git commit -m "new commit test"',
-//         (error, stdout, stderr) => {
-//             console.log(stdout);
-//             console.log(stderr);
-//             if (error !== null) {
-//                 console.log(`exec error: ${error}`);
-//             }
-//         });
+let gitCommit = exec('git commit -m "works once"',
+        (error, stdout, stderr) => {
+            console.log(stdout);
+            console.log(stderr);
+            if (error !== null) {
+                console.log(`exec error: ${error}`);
+            }
+        });
 
 console.log('git commit');
 
