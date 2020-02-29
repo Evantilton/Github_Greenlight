@@ -44,7 +44,7 @@ function itsTimeToCommit() {
                 }
             });
 
-        console.log('git add .')
+        console.log('just ran git add .')
 
     }, 20000);
 
@@ -59,7 +59,7 @@ function itsTimeToCommit() {
                 }
             });
 
-        console.log("git commit")
+        console.log("just ran git commit")
 
     }, 30000);
 
@@ -74,7 +74,7 @@ function itsTimeToCommit() {
                 }
             });
     }, 40000);
-
+    console.log("just ran git push")
 
 
     setTimeout(() => {
