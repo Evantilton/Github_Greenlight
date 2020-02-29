@@ -1,8 +1,8 @@
-let CronJob = require('cron').CronJob;
-      const { exec } = require('child_process');
-      const chalk = require('chalk');
-      const clear = require('clear');
-      const figlet = require('figlet');
+const CronJob = require('cron').CronJob;
+const { exec } = require('child_process');
+const chalk = require('chalk');
+const clear = require('clear');
+const figlet = require('figlet');
       
       
       let number = 0
@@ -24,23 +24,53 @@ let CronJob = require('cron').CronJob;
           
       console.log('hello world');
       
-      let gitbranch = exec('node program.js');
+      let gitbranch = exec('git branch',
+            (error, stdout, stderr) => {
+                console.log(stdout);
+                console.log(stderr);
+                if (error !== null) {
+                    console.log();
+                }
+            });
+
+    console.log('git branch')
 
       console.log('git branch');
       
-      let gitadd = exec('git add .')
+      let gitAdd = exec('git add .',
+            (error, stdout, stderr) => {
+                console.log(stdout);
+                console.log(stderr);
+                if (error !== null) {
+                    console.log();
+                }
+            });
 
       console.log('git add .')
 
-      let gitcommit = exec('git commit -m "test"')
+      let gitCommit = exec('git commit -m "test"',
+      (error, stdout, stderr) => {
+          console.log(stdout);
+          console.log(stderr);
+          if (error !== null) {
+              console.log();
+          }
+      });
 
       console.log("git commit")
 
-      let gitpush = exec('git push -u origin master')
+      let gitPush = exec('git push -u origin master',
+      (error, stdout, stderr) => {
+          console.log(stdout);
+          console.log(stderr);
+          if (error !== null) {
+              console.log();
+          }
+      });
       
       number = number+1
       
       console.log("number of times run this session", number)
       
       };
-      
+
