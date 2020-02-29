@@ -35,19 +35,6 @@ function itsTimeToCommit() {
     }, 10000);
 
     setTimeout(() => {
-        let gitbranch = exec('git branch',
-            (error, stdout, stderr) => {
-                console.log(stdout);
-                console.log(stderr);
-                if (error !== null) {
-                    console.log();
-                }
-            });
-        console.log('git branch')
-
-    }, 20000);
-
-    setTimeout(() => {
         let gitAdd = exec('git add .',
             (error, stdout, stderr) => {
                 console.log(stdout);
@@ -59,7 +46,7 @@ function itsTimeToCommit() {
 
         console.log('git add .')
 
-    }, 30000);
+    }, 20000);
 
 
     setTimeout(() => {
@@ -74,7 +61,7 @@ function itsTimeToCommit() {
 
         console.log("git commit")
 
-    }, 40000);
+    }, 30000);
 
 
     setTimeout(() => {
@@ -86,7 +73,7 @@ function itsTimeToCommit() {
                     console.log();
                 }
             });
-    }, 50000);
+    }, 40000);
 
 
 
@@ -94,6 +81,6 @@ function itsTimeToCommit() {
         number = number + 1
 
         console.log("number of times run this session", number)
-    }, 55000);
+    }, 50000);
 };
 
