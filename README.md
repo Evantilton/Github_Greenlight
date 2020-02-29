@@ -37,7 +37,7 @@ This program is meant as a proof of concept and conversation piece.  I do not in
 
 ## Future
 
-I have a number of different ideas for how this could be expanded.  I could use a Command Line Interface to perhapts set the Cronjob to a specific interval when you start it up.  I could to use a program like automator.app to make it so this can run on startup.  Lots of potential avenues.
+I have a number of different ideas for how this could be expanded.  I could use a Command Line Interface to set the Cronjob to a specific interval when you start it up.  I could also use a program like automator.app to make it so this can run on startup.  Lots of potential avenues.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
