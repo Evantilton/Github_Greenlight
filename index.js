@@ -8,7 +8,7 @@ const figlet = require('figlet');
       let number = 0
       
       
-      let job = new CronJob('*/10 * * * * *', function() {
+      let job = new CronJob('*/20 * * * * *', function() {
           pretty();
         }, null, true, 'America/Los_Angeles');
         job.start();
