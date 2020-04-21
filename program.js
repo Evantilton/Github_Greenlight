@@ -8,6 +8,6 @@ f=_=>                          //see aknowledgements for original source of this
         `${b=+b},${+a+b}`    
     ),                        
     console.log(               
-      (0,1)                    
+      (1,1)                    
     )                          
   );f()
