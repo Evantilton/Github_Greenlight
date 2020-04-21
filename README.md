@@ -8,8 +8,6 @@ This program makes and commits changes to github on a timer.  It does this by st
 
 This program is meant as a proof of concept and conversation piece.  I do not intend to run this beyond this project.  I just want it to be something interesting that people might notice and dig a little deeper, maybe talk about in interviews. 
 
-Edit:  Apparently there's a high score board on github,  I'm going to run this until I reach the top 10.  For Science! (please don't flame me)
-
 ## Screen Shot
 
 ![Screenshot](screenshot.png)
