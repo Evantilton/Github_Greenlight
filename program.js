@@ -3,9 +3,11 @@ f=_=>                          //see aknowledgements for original source of this
   require('fs').writeFileSync(  
     __filename,                
     `f=${f};f()`.replace(      
-      undefined     
+      /(\d[^,]*),(\d[^\)]*)/,  // regexp to match and group the numbers in this script
+      (m,a,b)=>                // replace function with arguments match, group a, group b
+        `${b=+b},${+a+b}`    
     ),                        
     console.log(               
-      (1,0)                    
+      (0,1)                    
     )                          
   );f()
